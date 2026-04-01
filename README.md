@@ -1,4 +1,4 @@
-# Transformer-Based-Bug-Triage-via-Dual-Head-GPT-2-Fine-Tuning
+# Transformer-Based Bug Triage via Dual-Head GPT-2 Fine-Tuning
 
 A large language model fine-tuned to classify software bug reports by category and severity, built on a custom GPT-2 implementation trained from scratch in PyTorch.
 
