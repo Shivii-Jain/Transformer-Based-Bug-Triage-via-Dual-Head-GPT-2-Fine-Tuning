@@ -14,10 +14,6 @@ This project fine-tunes a GPT-2 (124M parameter) language model on 50,000 bug re
 5. End-to-end pipeline — data preprocessing, class balancing, BPE tokenization, training loop, evaluation, and model serialization
 Interactive demo — Gradio web UI for live inference with confidence scores and full probability distributions across all classes
 
-# Results
-
-MetricValueDataset size50,000 bug reportsBug categories16 classesSeverity levels4 classes (Critical / High / Medium / Low)Trainable parameters~7M of 124M totalTokenizerGPT-2 BPE via tiktoken
-
 # Project Structure
 
 ├── model.py          # Custom transformer + dual-head classifier
