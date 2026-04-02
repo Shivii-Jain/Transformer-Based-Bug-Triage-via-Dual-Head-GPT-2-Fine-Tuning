@@ -3,7 +3,7 @@
 A large language model fine-tuned to classify software bug reports by category and severity, built on a custom GPT-2 implementation trained from scratch in PyTorch.
 
 # Overview
-This project fine-tunes a GPT-2 (124M parameter) language model on 50,000 bug reports to simultaneously predict two properties of a commit message — the bug category (16 classes) and its severity level (4 classes) — using a dual-head classification architecture. The entire transformer backbone was implemented from scratch in PyTorch without HuggingFace or other high-level abstractions, and pre-trained GPT-2 weights were loaded manually from OpenAI's public checkpoint.
+This project fine-tunes a GPT-2 (124M parameter) language model on 50,000 bug reports to simultaneously predict two properties of a commit message the bug category (16 classes) and its severity level (4 classes) using a dual-head classification architecture. The entire transformer backbone was implemented from scratch in PyTorch without HuggingFace or other high-level abstractions, and pre-trained GPT-2 weights were loaded manually from OpenAI's public checkpoint.
 
 # Key Technical Highlights
 
@@ -27,9 +27,12 @@ Interactive demo — Gradio web UI for live inference with confidence scores and
 ```
 
 # Quickstart
+
+```bash
 pip install -r requirements.txt
 python main.py --data bug_dataset_50k.csv --epochs 5
 python app.py   # launch Gradio UI at localhost:7860
+```
 
 # Tech Stack
 Python · PyTorch · GPT-2 · Transfer Learning · tiktoken · Gradio · Pandas
