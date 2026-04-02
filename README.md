@@ -14,8 +14,8 @@ This project fine-tunes a GPT-2 (124M parameter) language model on 50,000 bug re
 5. End-to-end pipeline — data preprocessing, class balancing, BPE tokenization, training loop, evaluation, and model serialization
 Interactive demo — Gradio web UI for live inference with confidence scores and full probability distributions across all classes
 
-# Project Structure
-
+## Project Structure
+```
 ├── model.py          # Custom transformer + dual-head classifier
 ├── gpt_weights.py    # GPT-2 weight download and loading utilities
 ├── dataset.py        # Dataset, tokenization, class balancing
@@ -24,6 +24,7 @@ Interactive demo — Gradio web UI for live inference with confidence scores and
 ├── main.py           # End-to-end CLI entry point
 ├── app.py            # Gradio web UI
 └── demo.html         # Standalone browser demo
+```
 
 # Quickstart
 pip install -r requirements.txt
